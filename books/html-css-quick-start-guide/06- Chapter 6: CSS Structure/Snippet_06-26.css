@@ -1,5 +1,0 @@
-p::before { 
-    content: "NOTE: ";
-    font-weight: bold;
-    color: red;
-}
