@@ -42,6 +42,38 @@ h2 {
   overflow: hidden;
 }
 
+a[href^="mailto"] {
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="mailto"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="mailto"] {
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="https://twitter"] {
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="https://twitter"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+} 
+
+a:link { color: red; text-decoration: none; }
+a:visited { color:red; text-decoration: none; }
+a:hover { color:red; text-decoration: underline; }
+a:active { color:red; text-decoration: underline; }
+
 .column {
   float: left;
   width: 50%;
@@ -54,8 +86,8 @@ h2 {
 }
 
 .sidebar {
-  width: 70%;
-  float: center;
+  width: 40%;
+  float: right;
   margin: 10px;
   background-color: rgb(250, 235, 199);
   padding: 10px 20px;
