@@ -38,16 +38,19 @@ body {
 	border: 1px dashed #999;
 	border-bottom: none;
 }
+
 h1 {
 	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
 	border-bottom: 1px dashed #999;
 	padding: 5px 0 5px 8px;
 	color: #14556b;
 }
+
 p {
 	font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
 	margin: 10px 8px;
 }
+
 .copyright {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 1em;
@@ -60,7 +63,23 @@ p {
 }
 /* add your styles below here */
 
+figure {
+  float: right;
+  width: 222px;
+  margin: 15px 10px 5px 10px;
+}
 
+figure img {
+  border: 1px solid #666;
+  background-color: #CCC;
+  padding: 10px;
+}
 
-
-
+figcaption {
+  font: bold 1em/normal Verdana, Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #e6f3ff,white);
+  border: 1px dashed #666;
+  padding: 5px;
+}
