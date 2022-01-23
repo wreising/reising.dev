@@ -69,6 +69,9 @@ a[href^="https://twitter"]:hover:after {
   font-family: "Courier New", monospace;
 } 
 
+a {
+  font-family: Arial, sans-serif;
+}
 a:link { color: red; text-decoration: none; }
 a:visited { color:red; text-decoration: none; }
 a:hover { color:red; text-decoration: underline; }
