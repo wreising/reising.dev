@@ -17,6 +17,14 @@ body {
   line-height: 1.2;
 }
 
+#banner {
+  text-align: center;
+}
+
+#finished {
+  text-decoration: line-through;
+}
+
 h1 {
   font-size: 2.75em;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -38,8 +46,20 @@ h2 {
   border-bottom: 2px dotted rgb(141, 165, 22);
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 15px 0 5px 0;
+  margin: 15px 0 15px 0;
   overflow: hidden;
+}
+
+.sidebarBooks h2 {
+  margin: 1px 0 15px 0;
+}
+
+.sidebarLinks h2 {
+  margin: 1px 0 15px 0;
+}
+
+.sidebarProjects h2 {
+  margin: 1px 0 15px 0;
 }
 
 a[href^="mailto"] {
@@ -88,7 +108,7 @@ a:active { color:red; text-decoration: underline; }
   clear: both;
 }
 
-.sidebar {
+.sidebarProjects {
   width: 40%;
   float: right;
   margin: 10px;
@@ -100,7 +120,7 @@ a:active { color:red; text-decoration: underline; }
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
-.sidebar2 {
+.sidebarBooks {
   width: 40%;
   float: left;
   margin: 10px;
@@ -112,7 +132,7 @@ a:active { color:red; text-decoration: underline; }
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
-.sidebar3 {
+.sidebarLinks {
   width: 40%;
   float: right;
   margin: 10px;
@@ -151,9 +171,16 @@ body {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   padding: 15px;
 }
 
 footer {
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.row {
+  margin-top: 10px;
 }
