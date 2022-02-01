@@ -1,0 +1,58 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000066;
+   }
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.centered {
+    text-align:center;
+  }
+
+.orangetext {
+    color:coral;
+}
+
+.bigtext {
+    font-size:x-large;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+.tinytext {
+    font-size:12px;
+}
+
+.sansseriffont {
+    font-family:sans-serif;
+}
+
+.styledFont {
+    font-style: italic;
+}
+
+#styledImage {
+    border: darkblue;
+    border-width:thick;
+    border-style: dotted;
+}
+
+.redtext {
+    color: darkred;
+}
+
+.bluetext {
+    color: deepskyblue;
+}
+
+.greentext {
+    color: forestgreen;
+}

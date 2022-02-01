@@ -5,7 +5,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 105%;
   vertical-align: baseline;
 }
 
@@ -15,6 +15,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1.2;
+}
+
+div.logo {
+  width: 696px;
+  height: 123px;
+  background-image: url(images/reising-banner.png);
+  margin: 0 auto;
 }
 
 .banner {
@@ -63,11 +70,6 @@ h2 {
   margin: 1px 0 15px 0;
 }
 
-a[href^="mailto"] {
-  color: red;
-  font-family: "Courier New", monospace;
-}
-
 a[href^="mailto"]:hover:after {
   content: " -> " attr(title);
   color: red;
@@ -77,14 +79,57 @@ a[href^="mailto"]:hover:after {
 a[href^="mailto"] {
   color: red;
   font-family: "Courier New", monospace;
+  background: url(images/email.png) no-repeat left center;
+  padding-left: 35px;
 }
 
 a[href^="https://twitter"] {
   color: red;
   font-family: "Courier New", monospace;
+  background: url(images/twitter.png) no-repeat left center;
+  padding-left: 35px;
 }
 
 a[href^="https://twitter"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+} 
+
+a[href^="https://github"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/github.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://github"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+} 
+
+a[href^="https://uci"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/gitlab.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://uci"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+} 
+
+a[href^="https://stack"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/stack-overflow.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://stack"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
@@ -136,7 +181,8 @@ a:active { color:red; text-decoration: underline; }
 .sidebarLinks {
   width: 40%;
   float: right;
-  margin: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
   background-color: rgb(250, 235, 199);
   padding: 10px 20px;
   border: 1px dotted rgb(252, 101, 18);
@@ -146,13 +192,13 @@ a:active { color:red; text-decoration: underline; }
 }
 
 ol { 
-  padding-left: 1.4em;
+  padding-left: 1.2em;
   list-style: decimal;
 }
 
 ul {
-  padding-left: 1.4em;
-  list-style: square;
+  padding-left: 1.2em;
+  list-style: none;
 }
 
 table {
@@ -168,7 +214,7 @@ body {
   background-color: rgb(255, 255, 255);
   border: 3px solid rgb(75, 75, 75);
   box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
-  border-radius: 10px;
+  border-radius: 20px;
   max-width: 760px;
   margin-top: 20px;
   margin-left: auto;
@@ -185,4 +231,18 @@ footer {
 
 .row {
   margin-top: 10px;
+}
+
+.main {
+  padding-bottom: 15px;
+  border-bottom: 3px solid rgb(51, 51, 162);
+}
+
+.linkList {
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+.book {
+  font-weight: bold;
 }
