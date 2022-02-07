@@ -1,0 +1,254 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 105%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+div.logo {
+  width: 696px;
+  height: 123px;
+  background-image: url(../images/reising-banner.png);
+  margin: 0 auto;
+}
+
+.banner {
+  text-align: center;
+  border-bottom: 3px solid rgb(51, 51, 162);
+}
+
+#finished {
+  text-decoration: line-through;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(133, 161, 16);
+  text-transform: uppercase;
+  background-color: rgb(226, 235, 180);
+  padding: 5px 15px 2px 15px;
+  margin: 0 15px 20px 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  color: rgb(249, 107, 24);
+  border-top: 2px dotted rgb(141, 165, 22);
+  border-bottom: 2px dotted rgb(141, 165, 22);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 15px 0 15px 0;
+  overflow: hidden;
+}
+
+.sidebarBooks h2 {
+  margin: 1px 0 15px 0;
+}
+
+.sidebarLinks h2 {
+  margin: 1px 0 15px 0;
+}
+
+.sidebarProjects h2 {
+  margin: 1px 0 15px 0;
+}
+
+a[href^="mailto"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="mailto"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(../images/email.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://twitter"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(../images/twitter.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://twitter"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="https://github"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(../images/github.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://github"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="https://uci"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(../images/gitlab.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://uci"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a[href^="https://stack"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(../images/stack-overflow.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+.chapter {
+  background: url(../images/book.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://stack"]:hover:after {
+  content: " -> " attr(title);
+  color: red;
+  font-family: "Courier New", monospace;
+}
+
+a {
+  font-family: Arial, sans-serif;
+}
+a:link { color: red; text-decoration: none; }
+a:visited { color:red; text-decoration: none; }
+a:hover { color:#400000; text-decoration: underline; }
+a:active { color:red; text-decoration: underline; }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebarProjects {
+  width: 40%;
+  float: right;
+  margin: 10px;
+  background-color: rgb(250, 235, 199);
+  padding: 10px 20px;
+  border: 1px dotted rgb(173, 216, 230);
+  border-top: 20px solid rgb(173, 216, 230);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.sidebarBooks {
+  width: 40%;
+  float: left;
+  margin: 10px;
+  background-color: rgb(250, 235, 199);
+  padding: 10px 20px;
+  border: 1px dotted rgb(58, 58, 58);
+  border-top: 20px solid rgb(58, 58, 58);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.sidebarLinks {
+  width: 40%;
+  float: right;
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: rgb(250, 235, 199);
+  padding: 10px 20px;
+  border: 1px dotted rgb(252, 101, 18);
+  border-top: 20px solid rgb(252, 101, 18);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+ol { 
+  padding-left: 1.2em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.2em;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+
+html {
+  background-color: rgb(211, 211, 211);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(75, 75, 75);
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
+  border-radius: 20px;
+  max-width: 760px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.main {
+  padding-bottom: 15px;
+  border-bottom: 3px solid rgb(51, 51, 162);
+}
+
+.linkList {
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+.book {
+  font-weight: bold;
+  text-align: center;
+}

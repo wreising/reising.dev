@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Reising.Dev Homepage</title>
-<link rel="stylesheet" href="main.css">
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".answer").hide();
+  $('.section').click(function() {
+    var $answer = $(this).next('.answer');
+    if ($answer.is(':hidden')) {
+      $answer.slideDown();
+      $(this).addClass('close');
+    } else {
+     $answer.slideUp();
+     $(this).removeClass('close');
+    }
+  }); // end click
+  $('.tool').tooltip();
+}); // end ready()
+</script>
 </head>
 
 <body id="article">
@@ -14,10 +33,10 @@
 <div class="sidebarLinks">
   <h2>Other Reising Sites:</h2>
       <ul class="linkList">
-        <li><a href="https://reising.tech" target="_blank">reising.tech</a></li>
-        <li><a href="https://reisingphotography.com" target="_blank">reisingphotography.com</a></li>
-        <li><a href="https://reising.photography" target="_blank">reising.photography</a></li>
-        <li><a href="http://lilyreising.art" target="_blank">lilyreising.art</a></li>
+        <li><a href="https://reising.tech" target="_blank" class="tool" title="My Tech Blog">reising.tech</a></li>
+        <li><a href="https://reisingphotography.com" target="_blank" class="tool" title="My Photography">reisingphotography.com</a></li>
+        <li><a href="https://reising.photography" target="_blank" class="tool" title="Stories told through my photos">reising.photography</a></li>
+        <li><a href="http://lilyreising.art" target="_blank" class="tool" title="Art by Lily">lilyreising.art</a></li>
       </ul>
 </div>
 <div class="main">
@@ -36,8 +55,14 @@
 <div class="sidebarProjects">
   <h2>Boot Camp Projects:</h2>
     <uL class="linkList">
-      <li>Prework_WER</li>
-      <ul>
+      <li class="___section book">Section 1</li>
+        <ul class="___answer">
+          <li>Links</li>
+          <li>Project 1</li>
+        </ul>
+      <br>
+      <li id="finished" class="section book">Prework_WER</li>
+      <ul class="answer">
         <li><a id="finished" href="WER_Coding_Bootcamp/Prework_WER/Module-3/example.md">Example.md</a></li>
         <li><a id="finished" href="WER_Coding_Bootcamp/Prework_WER/Module-4/panda.html">Panda</a></li>
         <li><a id="finished" href="WER_Coding_Bootcamp/Prework_WER/Module-4/prework-about-me/index.html">About Me</a></li>
@@ -46,56 +71,88 @@
         <li><a id="finished" href="WER_Coding_Bootcamp/Prework_WER/Module-6/index.html">Box Buttons</a></li>
         <li><a id="finished" href="WER_Coding_Bootcamp/Prework_WER/Module-7/BooTheDog.html">Boo the Dog</a></li>
       </ul>
-      <li>Project 2</li>
-      <li>Project 3</li>
-      <li>Project 4</li>
     </ul>
 </div>
 <div class="sidebarBooks">
   <h2>Book Tutorials:</h2>
     <ul class="linkList">
-      <li class="book">Javascript and JQuery: <br>The Missing Manual</li>
-      <ul>
-        <li>Chapter 3</li>
-         <ul>
+      <li class="section book">Javascript and JQuery:<br>The Missing Manual</li>
+      <ul class="answer">
+        <li class="section">Chapter 3</li>
+         <ul class="answer">
            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter03/quiz.html">Quiz</a></li>
          </ul>
-        <li>Chapter 4</li>
-          <ul>
+        <li class="section chapter">Chapter 4</li>
+          <ul class="answer">
             <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter04/bibliography.html">Bibliography</a></li>
             <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter04/pull-quote.html">Pull Quote</a></li>
           </ul>
-        <li>Chapter 5</li>
-          <ul>
-            <li><a href="books/javascript-jquery-missing-manual/chapter05/events_intro.html">Events Intro</a></li>
-            <li><a href="books/javascript-jquery-missing-manual/chapter05/faq.html">FAQ</a></li>
+        <li class="section chapter">Chapter 5</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter05/events_intro.html">Events Intro</a></li>
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter05/faq.html">FAQ</a></li>
+          </ul>
+        <li class="section chapter">Chapter 6</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter06/animate.html">Animate</a></li>
+          </ul>
+        <li class="section chapter">Chapter 7</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter07/rollover.html">Roll Over</a></li>
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter07/gallery.html">Gallery</a></li>
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter07/menu.html">Menu</a></li>
+          </ul>
+        <li class="section chapter">Chapter 8</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter08/form.html">Form</a></li>
+            <li><a id="finished" href="books/javascript-jquery-missing-manual/chapter08/validation.html">Validation</a></li>
+          </ul>
+        <li class="section chapter">Chapter 9</li>
+          <ul class="__answer">
+            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/dialog.html">Dialog</a></li>
+            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/dialog_buttons.html">Dialog Buttons</a></li>
+            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/tooltips.html">Tooltips</a></li>
+            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/advanced_tooltips.html">Advanced Tooltips</a></li>
+            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/tabs.html">Tabs</a></li>            <li><a id="__finished" href="books/javascript-jquery-missing-manual/chapter09/accordion.html">Accordion</a></li>
           </ul>
       </ul>
-      <li class="book">CSS: The Missing Manual</li>
-      <ul>
-        <li>Chapter 8</li>
-          <ul>
+      <br>
+      <li id="finished" class="section book">CSS: The Missing Manual</li>
+      <ul class="answer">
+        <li class="section chapter">Chapter 8</li>
+          <ul class="answer">
             <li><a id="finished" href="books/css-missing-manual/08/02_gallery_ex/gallery.html">Gallery</a></li>
             <li><a id="finished" href="books/css-missing-manual/08/03_bg_ex/bg_images.html">Big Images</a></li>
           </ul>
-        <li>Chapter 9</li>
-        <ul>
+        <li class="section chapter">Chapter 9</li>
+        <ul class="answer">
           <li><a id="finished" href="books/css-missing-manual/09/links/links.html">Link</a></li>
           <li><a id="finished" href="books/css-missing-manual/09/nav_bar/nav_bar.html">Nav Bar</a></li>
         </ul>
-        <li>Chapter 11</li>
-          <ul>
+        <li class="section chapter">Chapter 11</li>
+          <ul class="answer">
             <li><a id="finished" href="books/css-missing-manual/11/form/form.html">Form</a></li>
             <li><a id="finished" href="books/css-missing-manual/11/table/table.html">Table</a></li>
           </ul>
-        <li><a id="finished" href="books/css-missing-manual/13">Chapter 13</a></li>
-        <li><a id="finished" href="books/css-missing-manual/14">Chapter 14</a></li>
-        <li><a id="finished" href="books/css-missing-manual/15">Chapter 15</a></li>
-        <li><a id="finished" href="books/css-missing-manual/16">Chapter 16</a></li>
-        <li>Chapter 17</li>
-          <ul>
-            <li><a href="books/css-missing-manual/17/flexbox-layout/index.html">Flexbox Layout</a></li>
-            <li><a href="books/css-missing-manual/17/nav-bar/nav-bar.html">Nav Bar</a></li>
+        <li class="section chapter">Chapter 13</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/css-missing-manual/13">Multi-Column</a></li>
+          </ul>
+        <li class="section chapter">Chapter 14</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/css-missing-manual/14">Positions</a></li>
+          </ul>
+        <li class="section chapter">Chapter 15</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/css-missing-manual/15">Responsive Design</a></li>
+          </ul>
+        <li class="section chapter">Chapter 16</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/css-missing-manual/16">Grid System</a></li>
+          </ul>
+        <li class="section chapter">Chapter 17</li>
+          <ul class="answer">
+            <li><a id="finished" href="books/css-missing-manual/17/flexbox-layout/index.html">Flexbox Layout</a></li>
           </ul>
       </ul>
     </ul>
