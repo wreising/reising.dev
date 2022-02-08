@@ -1,5 +1,5 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -71,22 +71,36 @@ nav ul li {
   justify-content: space-around;
 }
 
-.navLink { /* use with or instead of .container?*/
-  
-}
-
-.navLink a {
+.container a {
   font-family: Arial, sans-serif;
   font-size: 1.2em;
+  color: rgb(249, 107, 24);
+  text-decoration: none;
 }
 
 a {
   font-family: Arial, sans-serif;
 }
-a:link { color: red; text-decoration: none; }
-a:visited { color:red; text-decoration: none; }
-a:hover { color:#400000; text-decoration: underline; }
-a:active { color:red; text-decoration: underline; }
+
+.tool:link {
+  color: red;
+  text-decoration: none;
+}
+
+.tool:visited {
+  color: red;
+  text-decoration: none;
+}
+
+.tool:hover {
+  color: #400000;
+  text-decoration: underline;
+}
+
+.tool:active {
+  color: red;
+  text-decoration: underline;
+}
 
 footer {
   margin-top: 15px;
@@ -98,6 +112,3 @@ footer {
   text-align: center;
   border-top: 2px solid black;
 }
-
-
-
