@@ -4,21 +4,81 @@
 <head>
 <meta charset="UTF-8">
 <title>Homework 2 Contact</title>
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
-
+  $('.tool').tooltip();
 }); // end ready
 </script>
+<style>
+a[href^="mailto"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/email.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://twitter"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/twitter.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://github"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/github.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://uci"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/gitlab.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://stack"] {
+  color: red;
+  font-family: "Courier New", monospace;
+  background: url(images/stack-overflow.png) no-repeat left center;
+  padding-left: 35px;
+}
+</style>
 </head>
 
 <body>
 
-</body>
+<header>
+<h1>Reising</h1>
+<nav class="container">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
 
+<section>
+  <h2>Contact/Follow Info: William Reising</h2>
+  <ul>
+    <li><a href="mailto:william@reising.dev" class="tool" title="william@reising.dev">eMail</a></li>
+    <li><a href="https://twitter.com/ReisingTech" target="_blank" class="tool" title="@ReisingTech">Twitter</a></li>
+    <li><a href="https://github.com/wreising" class="tool" title="wreising">GitHub</a></li>
+    <li><a href="https://uci.bootcampcontent.com/william-btuFnw" class="tool" title="william">GitLab</a></li>
+    <li><a href="https://stackoverflow.com/users/17557927/wreising" class="tool" title="wreising">Stack Overflow</a></li>
+  </ul>
+</section>
 <footer>
+  <p>© 2022, William Reising</p>
 </footer>
+</body>
 
 </html>
