@@ -77,8 +77,12 @@ nav ul li {
 
 .navLink a {
   font-family: Arial, sans-serif;
+  font-size: 1.2em;
 }
 
+a {
+  font-family: Arial, sans-serif;
+}
 a:link { color: red; text-decoration: none; }
 a:visited { color:red; text-decoration: none; }
 a:hover { color:#400000; text-decoration: underline; }
