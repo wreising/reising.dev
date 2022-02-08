@@ -70,11 +70,11 @@ h2 {
   margin: 1px 0 15px 0;
 }
 
-a[href^="mailto"]:hover:after {
+/*a[href^="mailto"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
-}
+}*/
 
 a[href^="mailto"] {
   color: red;
@@ -90,11 +90,11 @@ a[href^="https://twitter"] {
   padding-left: 35px;
 }
 
-a[href^="https://twitter"]:hover:after {
+/*a[href^="https://twitter"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
-}
+}*/
 
 a[href^="https://github"] {
   color: red;
@@ -103,11 +103,11 @@ a[href^="https://github"] {
   padding-left: 35px;
 }
 
-a[href^="https://github"]:hover:after {
+/*a[href^="https://github"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
-}
+}*/
 
 a[href^="https://uci"] {
   color: red;
@@ -116,11 +116,11 @@ a[href^="https://uci"] {
   padding-left: 35px;
 }
 
-a[href^="https://uci"]:hover:after {
+/*a[href^="https://uci"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
-}
+}*/
 
 a[href^="https://stack"] {
   color: red;
@@ -134,11 +134,11 @@ a[href^="https://stack"] {
   padding-left: 35px;
 }
 
-a[href^="https://stack"]:hover:after {
+/*a[href^="https://stack"]:hover:after {
   content: " -> " attr(title);
   color: red;
   font-family: "Courier New", monospace;
-}
+}*/
 
 a {
   font-family: Arial, sans-serif;

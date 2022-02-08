@@ -2,9 +2,13 @@
 
 ##Deployed Site:
 
-https://reising.dev/WER_Coding_Bootcamp/Week_1/Homework2/Assets/index.html
+*https://reising.dev/WER_Coding_Bootcamp/Week_1/Homework2/Assets/index.html
+
+*https://github.com/wreising/reising.dev/tree/main/html/WER_Coding_Bootcamp/Week_1/Homework2/Assets
 
 
+
+From Homework2 README.md
 ______
 
 ### Minimum Requirements
@@ -23,6 +27,6 @@ ______
 
 * Each page must have valid and correct HTML. (use a validation service)
 
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
+	* Must contain your personalized information. (bio, name, images, links to social media, etc.)
 
 * Must properly utilize Bootstrap components and grid system.

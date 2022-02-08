@@ -47,8 +47,8 @@ h2 {
   font-size: 1.5em;
   font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
   color: rgb(249, 107, 24);
-  border-top: 2px dotted rgb(141, 165, 22);
-  border-bottom: 2px dotted rgb(141, 165, 22);
+  border-top: 2px dotted rgb(23, 81, 126);
+  border-bottom: 2px dotted rgb(23, 81, 126);
   padding-top: 5px;
   padding-bottom: 5px;
   margin: 15px 0 15px 0;
@@ -71,10 +71,29 @@ nav ul li {
   justify-content: space-around;
 }
 
-footer {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    clear: both;
-    font-family: Arial, sans-serif;
-    text-align: center;
+.navLink { /* use with or instead of .container?*/
+  
 }
+
+.navLink a {
+  font-family: Arial, sans-serif;
+}
+
+a:link { color: red; text-decoration: none; }
+a:visited { color:red; text-decoration: none; }
+a:hover { color:#400000; text-decoration: underline; }
+a:active { color:red; text-decoration: underline; }
+
+footer {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  clear: both;
+  font-family: Arial, sans-serif;
+  font-size: .8em;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+
+

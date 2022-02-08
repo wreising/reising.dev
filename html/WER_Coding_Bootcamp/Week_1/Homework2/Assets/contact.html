@@ -4,9 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Homework 2 Contact</title>
+
 <link href="css/jquery-ui.min.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
+
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -15,6 +17,7 @@ $(document).ready(function() {
   $('.tool').tooltip();
 }); // end ready
 </script>
+
 <style>
 a[href^="mailto"] {
   color: red;
@@ -50,21 +53,43 @@ a[href^="https://stack"] {
   background: url(images/stack-overflow.png) no-repeat left center;
   padding-left: 35px;
 }
+
+.my_photo {
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
+  border-radius: 20px;
+}
+
+aside {
+  padding-right: 15px;
+}
+
+header {
+  padding-bottom: 25px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Reising</h1>
+<h1>Reising<br>
+Week 1 - Homework2</h1>
+
 <nav class="container">
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="portfolio.html">Portfolio</a></li>
-  <li><a href="contact.html">Contact</a></li>
+  <li><a href="index.html" class="navLink">Home</a></li>
+  <li><a href="portfolio.html" class="navLink">Portfolio</a></li>
+  <li><a href="contact.html" class="navLink">Contact</a></li>
 </ul>
 </nav>
+
 </header>
+
+<aside>
+  <img src="images/my_photo.png" alt="Bill Reising" class="my_photo" width=40%>
+</aside>
 
 <section>
   <h2>Contact/Follow Info: William Reising</h2>
@@ -76,9 +101,22 @@ a[href^="https://stack"] {
     <li><a href="https://stackoverflow.com/users/17557927/wreising" class="tool" title="wreising">Stack Overflow</a></li>
   </ul>
 </section>
+
+<section>
+<h2>About Me</h2>
+  <p>
+  Born in San Clemente, CA and raised in Capistrano Beach, CA. I now live in San Juan Capistrano, CA.
+  </p>
+    <br>
+  <p>
+  I attended USC for Under Grad and USD for Law School. I practiced law for over 10 years and became the CEO of a medical device company. After the sale of that company, I retired and am now spending time with my family.
+  </p>
+</section>
+
 <footer>
   <p>© 2022, William Reising</p>
 </footer>
+
 </body>
 
 </html>
