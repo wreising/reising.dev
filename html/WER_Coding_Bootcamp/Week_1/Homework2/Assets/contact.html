@@ -20,54 +20,19 @@ $(document).ready(function() {
 </script>
 
 <style>
-a[href^="mailto"] {
-  font-family: "Courier New", monospace;
-  background: url(images/email.png) no-repeat left center;
-  padding-left: 35px;
-}
-
-a[href^="https://twitter"] {
-  font-family: "Courier New", monospace;
-  background: url(images/twitter.png) no-repeat left center;
-  padding-left: 35px;
-}
-
-a[href^="https://github"] {
-  font-family: "Courier New", monospace;
-  background: url(images/github.png) no-repeat left center;
-  padding-left: 35px;
-}
-
-a[href^="https://uci"] {
-  font-family: "Courier New", monospace;
-  background: url(images/gitlab.png) no-repeat left center;
-  padding-left: 35px;
-}
-
-a[href^="https://stack"] {
-  font-family: "Courier New", monospace;
-  background: url(images/stack-overflow.png) no-repeat left center;
-  padding-left: 35px;
-}
-
-a[href^="https://reising"] {
-  font-family: "Courier New", monospace;
-  background: url(images/camera.jpg) no-repeat left center;
-  padding-left: 35px;
-}
 
 .my_photo {
   box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
   border-radius: 20px;
-  float: right;
+  /*float: right;
+  margin-left: 20px;*/
 }
 
-aside {
-  padding-right: 15px;
-}
-
-header {
-  padding-bottom: 25px;
+@media (min-width: 600px) {
+  .my_photo {
+    float: right;
+    margin-left: 20px;
+  }
 }
 
 </style>
@@ -80,10 +45,10 @@ header {
 <h1>Student Bio<br>
 Week 1 - Homework2</h1>
 
-<nav class="container">
+<nav class="container-fluid">
   <a href="index.html" class="btn btn-secondary" role="button">Home</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
+  <a href="portfolio.html" class="btn btn-secondary" role="button">Portfolio</a>
+  <a href="contact.html" class="btn btn-primary" role="button">Contact</a>
 </nav>
 
 </header>

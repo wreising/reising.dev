@@ -22,12 +22,17 @@ body {
   border: 3px solid rgb(75, 75, 75);
   box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
   border-radius: 20px;
+  width: 90%;
   max-width: 960px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 25px;
+}
+
+header {
+  padding-bottom: 25px;
 }
 
 h1 {
@@ -55,6 +60,44 @@ h2 {
   overflow: hidden;
 }
 
+a[href^="mailto"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/email.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://twitter"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/twitter.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://github"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/github.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://uci"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/gitlab.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://stack"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/stack-overflow.png) no-repeat left center;
+  padding-left: 35px;
+}
+
+a[href^="https://reising"] {
+  font-family: "Courier New", monospace;
+  background: url(../images/camera.jpg) no-repeat left center;
+  padding-left: 35px;
+}
+
+
+
 ul {
   padding-left: 1.2em;
   list-style: none;
@@ -76,6 +119,7 @@ nav ul li {
   font-size: 1.2em;
   color: rgb(249, 107, 24);
   text-decoration: none;
+  width: 23%;
 }
 
 a {
