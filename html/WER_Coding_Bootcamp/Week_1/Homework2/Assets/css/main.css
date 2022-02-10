@@ -36,7 +36,7 @@ header {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 1.75em;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   text-align: center;
@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: .75em;
   font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
   color: rgb(249, 107, 24);
   border-top: 2px dotted rgb(23, 81, 126);
@@ -58,6 +58,15 @@ h2 {
   padding-bottom: 5px;
   margin: 15px 0 15px 0;
   overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 2.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 a[href^="mailto"] {
