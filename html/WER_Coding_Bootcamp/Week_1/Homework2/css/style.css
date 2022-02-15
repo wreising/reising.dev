@@ -46,10 +46,6 @@ h2 {
   overflow: hidden;
 }
 
-.poiret {
-  font-family: 'Poiret One', cursive;
-}
-
 .my_photo {
   box-shadow: 0 0 15px 5px rgba(44, 82, 100, .75);
   border-radius: 20px;
